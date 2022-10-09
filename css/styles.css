@@ -34,9 +34,11 @@ nav .logo {
 nav .logo img {
   height: 50px;
 }
-nav .logo p {
-  align-self: flex-end;
+nav .logo a {
+  align-self: center;
   font-size: 16px;
+  text-decoration: none;
+  color: black;
 }
 nav .searchbar {
   width: 450px;
