@@ -116,6 +116,119 @@ nav .links img {
   margin-top: 60px;
 }
 
+.books-block {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  margin-top: 80px;
+  margin-bottom: 150px;
+  width: 100%;
+}
+.books-block .books-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 66px;
+}
+.books-block .books {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.books-block .books .book {
+  display: flex;
+}
+.books-block .books .book .book-img {
+  width: 223px;
+  height: 246px;
+  margin-right: 54px;
+}
+.books-block .books .book .book-img img {
+  width: 223px;
+  height: 246px;
+  object-fit: fill;
+}
+.books-block .books .book .book-info {
+  font-size: 16px;
+}
+.books-block .books .book .book-info .book-desc {
+  width: 200px;
+  height: 105px;
+  margin-bottom: 40px;
+}
+.books-block .books .book .book-info .book-price {
+  height: 21px;
+  width: 50px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+.books-block .books .book .book-info .cart-button {
+  width: 150px;
+  height: 68px;
+}
+.books-block .books .book .book-info .cart-button button {
+  width: 150px;
+  height: 68px;
+  background-color: white;
+  outline: 1px solid black;
+}
+
+.blog-entry {
+  background-color: #587c83;
+  width: 80%;
+  height: 463px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blog-entry .blog-covers {
+  min-width: 500px;
+  height: 380px;
+  margin-right: 50px;
+}
+.blog-entry .blog-covers img {
+  width: 250px;
+  height: 380px;
+  margin-right: 10px;
+}
+.blog-entry .blog-img {
+  width: 600px;
+  height: 463px;
+  margin-left: -110px;
+}
+.blog-entry .blog-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.blog-entry .blog-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.blog-entry .blog-text .blog-title {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.blog-entry .blog-text .blog-desc {
+  margin-bottom: 50px;
+  font-size: 16px;
+  width: 413px;
+}
+.blog-entry .blog-text .read-more button {
+  background-color: #587c83;
+  border: 1px solid white;
+  width: 222px;
+  height: 68px;
+  color: white;
+  font-size: 16px;
+}
+
 footer {
   background-color: #587c83;
   color: white;

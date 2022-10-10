@@ -1,0 +1,61 @@
+.books-block {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  margin-top: 80px;
+  margin-bottom: 150px;
+  width: 100%;
+  .books-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 66px;
+  }
+  .books {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    //background-color: yellow;
+
+    .book {
+      display: flex;
+      //background-color: yellow;
+      .book-img {
+        width: 223px;
+        height: 246px;
+        //background-color: orange;
+        margin-right: 54px;
+        img {
+          width: 223px;
+          height: 246px;
+          object-fit: fill;
+        }
+      }
+      .book-info {
+        font-size: 16px;
+        .book-desc {
+          width: 200px;
+          height: 105px;
+          //background-color: green;
+          margin-bottom: 40px;
+        }
+        .book-price {
+          height: 21px;
+          width: 50px;
+          //background-color: pink;
+          margin-bottom: 35px;
+          font-weight: bold;
+        }
+        .cart-button {
+          width: 150px;
+          height: 68px;
+          //background-color: yellow;
+          button {
+            width: 150px;
+            height: 68px;
+            background-color: white;
+            outline: 1px solid black;
+          }
+        }
+      }
+    }
+  }
+}
