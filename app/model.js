@@ -86,7 +86,7 @@ var bookPageData = [
 ];
 
 export function changePage(pageID, callback) {
-    if (pageID == "" || pageID == "home") {
+    if (pageID == "" || pageID == "home" || pageID == "blog") {
         $.get(`pages/${pageID}.html`, function (data) {
             console.log('data' + data);
             $('#app').html(data);
