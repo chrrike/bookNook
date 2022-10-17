@@ -81,7 +81,62 @@ var bookPageData = [{
             bookPrice: "100",
         }
     ]
-}, ];
+},
+{
+    sectionTitle: "BLACK HISTORY BOOKS",
+    sectionBooks: [{
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "finding me.jpg",
+        bookPrice: "27.99",
+    },
+    {
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "mlk-biography.jpg",
+        bookPrice: "19.99",
+    },
+    {
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "elenor-roosevelt-biography.jpg",
+        bookPrice: "17.99",
+    },]
+    },
+    {
+        sectionTitle: "HORROR BOOKS",
+        sectionBooks: [{
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "misery.jpg",
+        bookPrice: "19.99",
+    },
+    {
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "frankenstein.jpg",
+        bookPrice: "15.99",
+    },
+    {
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "phantoms.jpg",
+        bookPrice: "19.99",
+    },]
+    },
+    {
+        sectionTitle:"CHILDREN'S BOOKS",
+        sectionBooks: [{
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "winnie the pooh.jpg",
+        bookPrice: "19.99",
+    },
+    {
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "cat and the hat.jpg",
+        bookPrice: "15.99",
+    },
+    {
+        bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+        bookImg: "fun facts about space.jpg",
+        bookPrice: "7.99",
+        }]
+    }
+ ];
 
 export function changePage(pageID, callback) {
     if (pageID == "" || pageID == "home" || pageID == "blog") {
@@ -103,14 +158,14 @@ export function changePage(pageID, callback) {
                     <div class="books">
                         <div class="book">
                             <div class="book-img">
-                                <img src="${book.sectionBooks[idx].bookImg}" alt="img">
+                                <img src="${book.sectionBooks.bookImg}" alt="img">
                             </div>
                             <div class="book-info">
                                 <div class="book-desc">
-                                    <p>${book.bookDesc}</p>
+                                    <p>${book.sectionBooks[idx].bookDesc}</p>
                                 </div>
                                 <div class="book-price">
-                                    <p>${book.bookPrice}</p>
+                                    <p>${book.sectionBooks[idx].bookPrice}</p>
                                 </div>
                                 <div class="cart-button">
                                     <button>Add to Cart</button>
