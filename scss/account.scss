@@ -1,0 +1,64 @@
+.account {
+    // background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    :placeholder-shown {
+        color: black;
+    }
+    .loginForm {
+        // background-color: green;
+        height: 1000px;
+        width: 223px;
+        .loginInfo {
+            // background-color: lightblue;
+            margin-top: 350px;
+            input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 2px solid black;
+            }
+            input[type=submit] {
+                color: white;
+                width: 170x;
+                height: 45px;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 256px;
+                background-color: #587C83;
+                border-bottom: none;
+            }
+        }
+    }
+    .signupForm {
+        // background-color: teal;
+        height: 1000px;
+        width: 500px;
+        .signupInfo {
+            margin-top: 350px;
+            input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 2px solid black;
+            }
+            input[type=submit] {
+                color: white;
+                width: 170x;
+                height: 45px;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 256px;
+                background-color: #587C83;
+                border-bottom: none;
+            }
+        }
+        
+    }
+}

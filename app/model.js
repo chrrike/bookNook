@@ -1,8 +1,7 @@
 var userInfo = {};
 var cart = [];
 
-var bookList = [
-    {
+var bookList = [{
         bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
         bookImg: "twilight-box-set.jpg",
         bookPrice: "99.99",
@@ -64,10 +63,9 @@ var bookList = [
     },
 ];
 
-var bookPageData = [
-    {
-        sectionTitle: "BOOKSETS",
-        sectionBooks: [{
+var bookPageData = [{
+    sectionTitle: "BOOKSETS",
+    sectionBooks: [{
             bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
             bookImg: "twilight-box-set.jpg",
             bookPrice: "99.99",
@@ -81,9 +79,9 @@ var bookPageData = [
             bookDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
             bookImg: "got-box-set.jpg",
             bookPrice: "100",
-        }]
-    },
-];
+        }
+    ]
+}, ];
 
 export function changePage(pageID, callback) {
     if (pageID == "" || pageID == "home") {
@@ -97,9 +95,9 @@ export function changePage(pageID, callback) {
             console.log('data' + data);
             $('#app').html(data);
             // need to add book function
-            $.each(bookPageData, function(idx, book){
+            $.each(bookPageData, function (idx, book) {
                 console.log(book);
-                 $(".books-sections").append(`
+                $(".books-sections").append(`
             <div class="books-block">
                 <div class="books-title">${book.sectionTitle}</div>
                     <div class="books">
@@ -124,11 +122,30 @@ export function changePage(pageID, callback) {
             `)
             });
         });
-    } else {
+    } else if (pageID == "cart") {
         $.get(`pages/${pageID}.html`, function (data) {
             console.log('data' + data);
             $('#app').html(data);
             // need to put add to cart function
+            $.each(cart, function (idx, cartItem) {
+                console.log(bookList[cartItem]);
+                let book = bookList[cartItem];
+                $(".items").append(
+                    `
+                    <div class="items">
+        <div class="cartImg">
+            <img src="/assets/images/${book.sectionBooks[idx].bookImg}" alt="img">
+        </div>
+    <div class="cart-info">
+        <h4 class="cart-title">${book.sectionTitle}</h4>
+        <p class="cart-price">${book.bookPrice}</p>
+        <p>In Stock</p>
+        <p>Qty: x</p>
+    </div>
+    <hr>
+                    `
+                )
+            })
         })
     }
 }
