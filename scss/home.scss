@@ -1,0 +1,74 @@
+.home {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    .banner {
+        background-image: linear-gradient(rgba(#587C83, .5), rgba(#587C83,.5)), url(/assets/images/home-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       // background-color: pink;
+        width: 1500px;
+        height: 540px;
+        margin: 0 auto;
+        margin-top: 160px;
+        margin-bottom: 158px;
+        .banner-title {
+           // background-color: pink;
+            margin: 0 auto 0 auto;
+            text-align: right;
+            color: white;
+            padding: 170px;
+            h2 {
+                font-weight: bold;
+                font-size: 32px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .book-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .book-col {
+            display: flex;
+            .home-img {
+                width: 306px;
+                height: 491px;
+                img {
+                    width: 306px;
+                    height: 491px;
+                }
+            }
+            .home-info {
+               // background-color: pink;
+                .home-desc {
+                    text-align: center;
+                    font-size: 16px;
+                    width: 413px;
+                    height: 153px;
+                    padding: 15px;    
+                }
+                .home-price {
+                    font-weight: bold;
+                    font-size: 32px;
+                    text-align: center;
+                }
+                .home-btn {
+                    width: 150px;
+                    height: 68px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 256px;
+                    button {
+                        font-size: 16px;
+                        width: 150px;
+                        height: 68px;
+                        background-color: white;
+                        outline: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
